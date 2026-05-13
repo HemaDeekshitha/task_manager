@@ -1,0 +1,9 @@
+node_modules
+.env
+dist
+.DS_Store
+team-task-manager/backend/.env
+team-task-manager/frontend/.env
+team-task-manager/backend/node_modules
+team-task-manager/frontend/node_modules
+team-task-manager/frontend/dist

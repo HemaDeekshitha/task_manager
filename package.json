@@ -1,0 +1,16 @@
+{
+  "name": "team-task-manager-root",
+  "version": "1.0.0",
+  "description": "Root package to manage backend and frontend",
+  "scripts": {
+    "install-all": "npm install && cd team-task-manager/backend && npm install && cd ../frontend && npm install",
+    "backend": "cd team-task-manager/backend && npm run dev",
+    "frontend": "cd team-task-manager/frontend && npm run dev",
+    "dev": "concurrently \"npm run backend\" \"npm run frontend\"",
+    "build": "cd team-task-manager/frontend && npm install && npm run build",
+    "start": "cd team-task-manager/backend && npm install && node server.js"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
