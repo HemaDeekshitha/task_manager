@@ -19,6 +19,7 @@ const sequelize = new Sequelize(process.env.DATABASE_URL || 'mysql://root:HEMA20
 
 const connectDB = async () => {
   try {
+    console.log('Connecting to database:', process.env.DATABASE_URL ? process.env.DATABASE_URL.split('@')[1] : 'No URL provided');
     await sequelize.authenticate();
     console.log('MySQL Connected');
     
